@@ -2,6 +2,7 @@ package net.maks.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.maks.tutorialmod.Item.ModItemGroups;
 import net.maks.tutorialmod.Item.ModItems;
 import net.maks.tutorialmod.block.ModBlocks;
@@ -18,5 +19,7 @@ public class TutorialMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.ABYSSITE, 800);
 	}
 }

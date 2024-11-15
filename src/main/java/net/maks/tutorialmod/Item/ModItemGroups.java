@@ -29,10 +29,18 @@ public class ModItemGroups {
                         entries.add(ModItems.CRYSTALIUM_INGOT);
                         entries.add(ModItems.NETHER_CRYSTALIUM_INGOT);
                         entries.add(ModItems.NETHER_CRYSTALIUM_SHARD);
+                        entries.add(ModItems.END_CRYSTALIUM_SHARD);
+                        entries.add(ModItems.END_CRYSTALIUM_INGOT);
 
                         //block
                         entries.add(ModBlocks.STEELIUM_BLOCK);
                         entries.add(ModBlocks.CRYSTALIUM_BLOCK);
+                        entries.add(ModBlocks.CRYSTALIUM_BUDDING);
+
+                        //budding
+                       // entries.add(ModBlocks.CRYSTALIUM_SMALL_BUD);
+                       // entries.add(ModBlocks.CRYSTALIUM_MEDIUM_BUD);
+                       // entries.add(ModBlocks.CRYSTALIUM_LARGE_BUD);
 
 
 
@@ -59,6 +67,26 @@ public class ModItemGroups {
 
                         //end dimension
                         entries.add((ModBlocks.END_CRYSTALIUM_ORE));
+
+
+
+
+                        //sound block
+                        entries.add((ModBlocks.SOUND_BLOCK));
+
+
+                        //food
+                        entries.add(ModItems.LIVING_CRYSTALIUM);
+                        entries.add(ModItems.ABYSSITE);
+
+
+
+
+
+
+
+
+
 
 
 

@@ -18,8 +18,14 @@ public class ModItems {
     public  static final Item NETHER_CRYSTALIUM_SHARD = registerItem("nether_crystalium_shard", new Item(new FabricItemSettings()));
     public  static final Item CRYSTALIUM_INGOT = registerItem("crystalium_ingot", new Item(new FabricItemSettings()));
     public  static final Item NETHER_CRYSTALIUM_INGOT = registerItem("nether_crystalium_ingot", new Item(new FabricItemSettings()));
-    //public  static final Item END_CRYSTALIUM_INGOT = registerItem("end_crystalium_ingot", new Item(new FabricItemSettings()));
-    //public  static final Item END_CRYSTALIUM_SHARD = registerItem("end_crystalium_shard", new Item(new FabricItemSettings()));
+    public  static final Item END_CRYSTALIUM_INGOT = registerItem("end_crystalium_ingot", new Item(new FabricItemSettings()));
+    public  static final Item END_CRYSTALIUM_SHARD = registerItem("end_crystalium_shard", new Item(new FabricItemSettings()));
+
+
+    public  static final Item LIVING_CRYSTALIUM = registerItem("living_crystalium", new Item(new FabricItemSettings().food(ModFoodComponents.LIVING_CRYSTALIUM)));
+    public  static final Item ABYSSITE = registerItem("abyssite",
+            new Item(new FabricItemSettings()));
+
 
 
 
@@ -43,8 +49,11 @@ public class ModItems {
         entires.add(CRYSTALIUM_INGOT);
         entires.add(NETHER_CRYSTALIUM_INGOT);
         entires.add(NETHER_CRYSTALIUM_SHARD);
+
        // entires.add(END_CRYSTALIUS_SHARD);
         //entires.add(END_CRYSTALIUS_INGOT); //wrazie gdy będzie mi sie chciało robić end bloki
+
+
 
 
     }

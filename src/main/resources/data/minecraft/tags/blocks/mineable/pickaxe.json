@@ -3,9 +3,13 @@
   "values": [
 
     "tutorialmod:steelium_block",
+    "tutorialmod:steelium_ore",
     "tutorialmod:raw_steelium_block",
     "tutorialmod:crystalium_cluster",
-    "tutorialmod:crystalium_block"
+    "tutorialmod:crystalium_budding",
+    "tutorialmod:nether_crystalium_cluster",
+    "tutorialmod:crystalium_block",
+    "tutorialmod:nether_crystalium_block"
 
     
   ]
