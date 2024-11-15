@@ -3,6 +3,7 @@ package net.maks.tutorialmod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.maks.tutorialmod.TutorialMod;
+import net.maks.tutorialmod.block.custom.SoundBlock;
 import net.minecraft.block.AmethystBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -23,6 +24,22 @@ public class ModBlocks {
     public  static final Block CRYSTALIUM_BLOCK =  registerBlock("crystalium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(4.0f)));
 
+
+    //Block
+    public  static final Block CRYSTALIUM_BUDDING =  registerBlock("crystalium_budding",
+           new Block(FabricBlockSettings.copyOf(Blocks.BUDDING_AMETHYST).strength(1.5f)));
+
+    //Bud
+   // public  static final Block CRYSTALIUM_SMALL_BUD =  registerBlock("crystalium_budding",
+         //   new Block(FabricBlockSettings.copyOf(Blocks.SMALL_AMETHYST_BUD).strength(1.5f)));
+
+
+   // public  static final Block CRYSTALIUM_MEDIUM_BUD =  registerBlock("crystalium_budding",
+            //new Block(FabricBlockSettings.copyOf(Blocks.MEDIUM_AMETHYST_BUD).strength(1.5f)));
+
+   // public  static final Block CRYSTALIUM_LARGE_BUD =  registerBlock("crystalium_budding",
+    //        new Block(FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD).strength(1.5f)));
+
     //raw blocks
     public  static final Block RAW_STEELIUM_BLOCK =  registerBlock("raw_steelium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
@@ -30,7 +47,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(2.2f).sounds(BlockSoundGroup.AMETHYST_CLUSTER)));
     //ore
     public  static final Block STEELIUM_ORE =  registerBlock("steelium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(1.7f), UniformIntProvider.create(2,5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.8f), UniformIntProvider.create(2,5)));
     public  static final Block CRYSTALIUM_ORE =  registerBlock("crystalium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).strength(1.5f), UniformIntProvider.create(1,12)));
 
@@ -38,8 +55,9 @@ public class ModBlocks {
     public  static final Block DEEPSLATE_STEELIUM_ORE =  registerBlock("deepstale_steelium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f), UniformIntProvider.create(2,5)));
 
-    public  static final Block DEEPSLATE_CRYSTALIUM_ORE =  registerBlock("deepstale_crystalium_ore",
+    public  static final Block DEEPSLATE_CRYSTALIUM_ORE =  registerBlock("deepslate_crystalium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(2.5f).sounds(BlockSoundGroup.AMETHYST_BLOCK), UniformIntProvider.create(1,12)));
+
 
 
     //nether things
@@ -56,10 +74,24 @@ public class ModBlocks {
     public  static final Block END_CRYSTALIUM_ORE =  registerBlock("end_crystalium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(3f), UniformIntProvider.create(5,7)));
 
+    // public  static final Block CRYSTALIUM_SMALL_BUD =  registerBlock("crystalium_budding",
+    //   new Block(FabricBlockSettings.copyOf(Blocks.SMALL_AMETHYST_BUD).strength(2.8f)));
+
+
+    // public  static final Block CRYSTALIUM_MEDIUM_BUD =  registerBlock("crystalium_budding",
+    //new Block(FabricBlockSettings.copyOf(Blocks.MEDIUM_AMETHYST_BUD).strength(2.8f)));
+
+    // public  static final Block CRYSTALIUM_LARGE_BUD =  registerBlock("crystalium_budding",
+    //        new Block(FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD).strength(2.8f)));
 
 
 
 
+
+
+    //sound block
+    public  static final Block SOUND_BLOCK =  registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
 
